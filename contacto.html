@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Consultorio Psicológico Luz Angeles</title>
+    <title>Luz Angeles | Consultorio Psicológico</title>
+    <!-- Enlaces directos a los archivos CSS en la raíz -->
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="reserva.css">
+    <!-- Fuente de Google Fonts para un diseño moderno -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,11 +20,12 @@
                 <span class="logo-text">Luz Angeles</span>
             </a>
             <nav class="nav-menu" id="navMenu">
-                <a href="index.html">Inicio</a>
+                <a href="index.html" class="active">Inicio</a>
                 <a href="sobre-mi.html">Sobre Mí</a>
                 <a href="servicios.html">Servicios</a>
-                <a href="contacto.html" class="active">Contacto</a>
+                <a href="contacto.html">Contacto</a>
                 <a href="reservar.html" class="btn-reserva-nav">Reserva de Citas</a>
+                <a href="login.html" class="nav-link">Administración</a>
             </nav>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
@@ -50,7 +53,7 @@
                         <span style="font-size: 1.2rem; background: rgba(23, 140, 164, 0.1); padding: 10px; border-radius: 10px;">📞</span>
                         <div>
                             <strong style="display: block; color: var(--primary-color); font-size: 0.9rem;">Teléfono / WhatsApp</strong>
-                            <span style="color: #555; font-size: 0.95rem;">+51 900 000 000</span>
+                            <span style="color: #555; font-size: 0.95rem;">+51 918 750 919</span>
                         </div>
                     </div>
 
@@ -58,15 +61,7 @@
                         <span style="font-size: 1.2rem; background: rgba(23, 140, 164, 0.1); padding: 10px; border-radius: 10px;">✉️</span>
                         <div>
                             <strong style="display: block; color: var(--primary-color); font-size: 0.9rem;">Correo Electrónico</strong>
-                            <span style="color: #555; font-size: 0.95rem;">contacto@luzangeles.com</span>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; gap: 15px; margin-bottom: 20px; align-items: flex-start;">
-                        <span style="font-size: 1.2rem; background: rgba(23, 140, 164, 0.1); padding: 10px; border-radius: 10px;">📍</span>
-                        <div>
-                            <strong style="display: block; color: var(--primary-color); font-size: 0.9rem;">Ubicación</strong>
-                            <span style="color: #555; font-size: 0.95rem;">Consultorio Presencial y Online</span>
+                            <span style="color: #555; font-size: 0.95rem;">consultorioluzangeles@gmail.com</span>
                         </div>
                     </div>
 
@@ -74,7 +69,7 @@
                         <span style="font-size: 1.2rem; background: rgba(23, 140, 164, 0.1); padding: 10px; border-radius: 10px;">⏰</span>
                         <div>
                             <strong style="display: block; color: var(--primary-color); font-size: 0.9rem;">Horarios de Atención</strong>
-                            <span style="color: #555; font-size: 0.95rem;">Lunes a Sábado: 9:00 AM - 7:00 PM</span>
+                            <span style="color: #555; font-size: 0.95rem;">Lunes a Domingo: 09:00 PM - 10:00 PM</span>
                         </div>
                     </div>
                 </div>
@@ -126,7 +121,7 @@ function enviarPorWhatsApp() {
         return;
     }
 
-    const numeroWhatsApp = "51900000000"; // Reemplaza con el número real
+    const numeroWhatsApp = "51918750919"; // Reemplaza con el número real
     const texto = `Hola, mi nombre es *${nombre}*.\nMi correo es: ${correo}\n\nMensaje:\n${mensaje}`;
     
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
@@ -143,7 +138,7 @@ function enviarPorCorreo() {
         return;
     }
 
-    const destinatario = "contacto@luzangeles.com"; // Reemplaza con el correo real
+    const destinatario = "consultorioluzangeles@gmail.com"; // Reemplaza con el correo real
     const asunto = `Nuevo mensaje de contacto de ${nombre}`;
     const cuerpo = `Hola, te escribo desde la web.\n\nNombre: ${nombre}\nCorreo de contacto: ${correo}\n\nMensaje:\n${mensaje}`;
 
